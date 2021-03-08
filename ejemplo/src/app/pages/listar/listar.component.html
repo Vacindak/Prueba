@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Fecha de Creación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of listproducto">
+            <th scope="row">{{producto.id}}</th>
+            <td>{{producto.nombre}}</td>
+            <td>{{producto.precio}}</td>
+            <td>{{producto.stock}}</td>
+            <td>{{producto.fechaRegistro}}</td>
+
+        </tr>
+    </tbody>
+</table>

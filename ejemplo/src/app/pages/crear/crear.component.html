@@ -1,0 +1,18 @@
+<form #formulario="ngForm" (ngSubmit)="agregar(formulario)" ngNativeValidate>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Nombre</label>
+        <input type="text" class="form-control" ngModel name="nombre">
+        <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Precio</label>
+        <input type="text" class="form-control" ngModel name="precio">
+        <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Stock</label>
+        <input type="text" class="form-control" ngModel name="stock">
+        <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
